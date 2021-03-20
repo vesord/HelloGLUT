@@ -2,8 +2,7 @@
 #include <GLUT/glut.h>
 #include <unistd.h>
 #include <stdlib.h>
-#include <math.h>
-#include "utils.h"
+#include <string.h>
 
 static const GLint windowWidth =  640;
 static const GLint windowHeight = 640;
@@ -12,6 +11,15 @@ static const GLint leftCorner = 	-windowWidth / 2;
 static const GLint rightCorner =	 windowWidth / 2;
 static const GLint topCorner = 		 windowHeight / 2;
 static const GLint bottomCorner = 	-windowHeight / 2;
+
+void exit_fatal(char * str) {
+	write(2, str, strlen(str));
+	exit(1);
+}
+
+GLfloat randFloat() {
+	return (float)(rand()) / (float)(RAND_MAX);
+}
 
 void init(void) {
 	glClearColor(0.33f,0.33f,0.33f,0.0);

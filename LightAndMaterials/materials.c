@@ -1,6 +1,6 @@
 #define GL_SILENCE_DEPRECATION
 #include <GLUT/glut.h>
-#include "HelloGLUT/LightAndMaterials/materials.h"
+#include "materials.h"
 
 typedef struct	s_material {
 	t_material_type type;
