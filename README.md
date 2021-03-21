@@ -1,7 +1,9 @@
 # HelloGLUT
 Some simple examples of OpenGL with GLUT
 
-In this mini-programms glBegin() glEnd() and some GLUT drawing functions are just used
+In this mini-programms glBegin() glEnd() and some GLUT drawing functions are just used.
+
+For quick look up most of projects has some .gif provided.
 
 ## Two dimension transform
 2D visualisation of some moving figures. Good for understand how coordinate systems are moved/rotated/scaled.
